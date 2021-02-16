@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Math Quiz Game</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="quiz_game.css">
+</head>
+<body>
+
+<h4 id="player1_name"></h4> <span id="player1_score"></span>
+<br>
+<h4 id="player2_name"></h4> <span id="player2_score"></span>
+
+<div class="container">
+	<center>
+		<h2 style="color: black; font-size: 50px; font-family: cursive;       border-style: ridge;
+        background-color: palevioletred; border-color:yellowgreen; border-width: 10px;">The Math Quiz Game</h2>
+		<h3 id="player_question"></h3>
+		<h3 id="player_answer"></h3>
+		<div id="output" class="col-lg-6"> </div>
+		<br><br>
+		<br>
+		<label style=" color:springgreen; background-color: black; font-size: 40px;">Enter 2 numbers : <b style= " background-color: black; color: red">Try putting integers or whole numbers.</b>
+		</label>
+        <br><br><br>
+        <label style=" text-align: center; color:springgreen; background-color: black; font-size: 30px;">Number 1 
+		</label>
+		<input style=" border-style: groove;
+        border-color: palevioletred;
+        border-width: 6px; font-size: 30px; background: linear-gradient(yellow, lightblue);" type="number" id="n1"  class="form-control" placeholder="Number1">
+        <br><br><br>
+        <label style="text-align: center; color:springgreen; background-color: black; font-size: 30px;">Number 2 
+		</label>
+		<input style="border-style: groove;
+        border-color: palevioletred;
+        border-width: 6px; font-size: 30px; background: linear-gradient(yellow, lightblue);" type="number" id="n2"  class="form-control" placeholder="Number2">
+		<br><br><br>
+		<button id="button2" onclick="send()" class="btn btn-success" style="font-size: 25px; width: 30%;">Send</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
